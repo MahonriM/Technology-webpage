@@ -5,31 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Technology</title>
 <style>
-  body{ background-color: chartreuse;}
-  
-  
-  h1{color:powderblue ;}
+  body{ background-color: rgb(4, 114, 114);}  
+  .titulo{    
+      color:whitesmoke ;
+      font-size: 2rem;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+  }
   a:link {
   color: #e8ebe5ea;
 }
   a:visited {
-  color: #1ef7ffbb;
+  color: #7bff00bb;
 }
 .stilo{
-  font-style: arial;
+  padding: 2rem;
+  font-family: 'Fira Code', monospace;
+  color: azure;
+
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-tipografica {
+  list-style:none;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.lista-tipografica li {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.lista-tipografica li:hover {
+  color: #007bff;
+}
+
 </style>
 </head>
 <body background-color="blue">
-  <h1>Welcome in this website you can find articles </h1>
+  <h1 class="titulo">Welcome in this website you can find articles </h1>
   <article>
-    <p>In this website you can find different small articles with information related to some IT Topics</p>
-  </article>
-  <ul>
+    <p class="stilo">In this website you can find different small articles with information related to some IT Topics</p>
+    <br>
+    <ul class="lista-tipografica">
     <li><a href="https://mahonrim.github.io/Create-tables/">Create tables using SQL Server and Oracle</a></li>
+    <br>
     <li><a href="https://mahonrim.github.io/FuctionswithSQLServer/">Introducción a las base de datos y funciones en SQL Server</a></li>
+    <br>
     <li><a href="https://mahonrim.github.io/f-strings-vs-format/">Python f-strings vs format</a></li>
+    <br>
     <li><a href="https://mahonrim.github.io/Fundamentos-seguridad/">Fundamentos de seguridad</a></li>
   </ul>
+
+</article>
 </body>
+<footer>
+  <p class="stilo">Mahonri Martinez 2025</p>
+</footer>
 </html>
